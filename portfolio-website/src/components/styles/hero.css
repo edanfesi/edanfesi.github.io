@@ -1,0 +1,31 @@
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrapper {
+  margin-top: 150px;
+}
+
+.hero__icon {
+  font-size: 40px;
+  line-height: 72px;
+}
+
+.hero__description {
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 300;
+  max-width: 621px;
+  margin-bottom: 30px;
+}
+
+.hero__description a {
+  color: var(--c-current--work);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.hero__btn {
+  margin-bottom: 40px;
+}
