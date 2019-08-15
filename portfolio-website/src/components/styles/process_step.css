@@ -7,6 +7,8 @@
     ". process-description";
   font-size: 1.14rem;
   grid-gap: 9px 15px;
+  margin-bottom: 2.86rem;
+  flex-grow: 0;
 }
 
 .process-step__number {
@@ -32,6 +34,8 @@
 
 .process-step__description {
   grid-area: process-description;
+  font-size: 1.14rem;
+  line-height: 1.64rem;
 }
 
 .process-step__description span {

@@ -6,7 +6,7 @@ import ProfileContact from "./profile_contact"
 
 function Hero() {
   return (
-    <div className="hero">
+    <main className="section">
       <div className="hero-wrapper">
         <span className="hero__icon" role="img" arial-label="Waving Hand">
           👋
@@ -27,7 +27,7 @@ function Hero() {
         <ProfileContact />
       </div>
       <hr />
-    </div>
+    </main>
   )
 }
 

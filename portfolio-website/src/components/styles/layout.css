@@ -13,9 +13,13 @@
   --c-btn__text: #ffffff;
   --c-btn__shadow: rgba(60, 9, 179, 0.2);
 
-  --page-size-max: 1100px;
   --font-size: 14px;
   --border-radius: 5px;
+
+  --background-color--light: #fff;
+  --background-color--dark: #000;
+
+  --max-width-container--web: 1100px;
 }
 
 html {
@@ -43,4 +47,12 @@ hr {
   outline: none;
   border: none;
   text-decoration: none;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  max-width: var(--max-width-container--web);
+  margin: auto;
 }

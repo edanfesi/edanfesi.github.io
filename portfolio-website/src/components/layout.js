@@ -15,7 +15,7 @@ import "./styles/layout.css"
 import Header from "./header"
 import Hero from "./hero"
 import DevelopingProcess from "./developing_process"
-import Footer from "./footer"
+import GetInTouch from "./get_in_touch"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <Hero />
       <DevelopingProcess />
-      <Footer />
+      <GetInTouch />
     </>
   )
 }

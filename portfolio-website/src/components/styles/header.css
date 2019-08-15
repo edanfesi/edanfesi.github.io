@@ -1,12 +1,16 @@
 .header {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  padding: 9px 15px;
+  padding: 9px 0;
+  position: fixed;
+  width: 100%;
+  background-color: var(--background-color--light);
+  z-index: 1;
 }
 
 .header-wrapper {
   display: flex;
   margin: auto;
-  max-width: var(--page-size-max);
+  max-width: var(--max-width-container--web);
 }
 
 .logo {
