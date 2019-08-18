@@ -13,9 +13,7 @@ import "./styles/reset.css"
 import "./styles/layout.css"
 
 import Header from "./header"
-import Hero from "./hero"
-import DevelopingProcess from "./developing_process"
-import GetInTouch from "./get_in_touch"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,9 +29,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Hero />
-      <DevelopingProcess />
-      <GetInTouch />
+      <main>{children}</main>
+      <Footer />
     </>
   )
 }
