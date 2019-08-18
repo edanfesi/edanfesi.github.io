@@ -2,6 +2,7 @@
   background-color: var(--c-primary);
   color: white;
   max-width: inherit;
+  flex-direction: column;
 }
 
 .get-in-touch-wrapper {

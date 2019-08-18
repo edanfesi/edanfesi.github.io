@@ -27,8 +27,6 @@ function GetInTouch() {
           <ProfileContact />
         </div>
       </div>
-
-      <Footer />
     </section>
   )
 }
