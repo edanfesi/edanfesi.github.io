@@ -1,6 +1,5 @@
 .footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 0 15px 20px;
   background-color: var(--color-primary);
   color: var(--color-secundary);
 }
@@ -8,6 +7,7 @@
 .footer p {
   font-size: 0.86rem;
   opacity: 0.3;
+  line-height: 1.3rem;
   text-align: center;
 }
 
@@ -21,4 +21,15 @@
   font-size: 1.43rem;
   color: var(--btn-color__text);
   margin: auto 0.71rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer p {
+    line-height: initial;
+  }
 }

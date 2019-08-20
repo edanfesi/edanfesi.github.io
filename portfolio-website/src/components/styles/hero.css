@@ -20,3 +20,19 @@
 .hero__btn {
   margin-bottom: 40px;
 }
+
+@media screen and (max-width: 767px) {
+  .hero-wrapper {
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 4.5rem;
+    line-height: 4.64rem;
+  }
+
+  .hero__description {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}

@@ -66,13 +66,21 @@ hr {
   display: flex;
   align-items: center;
   /* height: 100vh; */
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding: 100px 15px;
   max-width: var(--block-max-width--web);
   margin: auto;
+  justify-content: center;
 }
 
 .link {
   color: var(--color-brand);
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    justify-content: flex-start;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 }

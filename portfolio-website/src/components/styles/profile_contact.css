@@ -1,6 +1,7 @@
 .profile-availability {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .profile-img {
@@ -43,4 +44,10 @@
 
 .profile-availability__description span {
   font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-availability {
+    justify-content: flex-start;
+  }
 }
