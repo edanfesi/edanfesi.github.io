@@ -1,0 +1,15 @@
+.timeline {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+
+.timeline:before {
+  content: "";
+  border-left: 1px dashed var(--color-primary);
+  position: absolute;
+  left: 42%;
+  width: 1px;
+  bottom: 58px;
+  top: 40px;
+}
