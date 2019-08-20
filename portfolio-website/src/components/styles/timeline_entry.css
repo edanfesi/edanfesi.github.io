@@ -6,8 +6,8 @@
 
 .entry__title {
   margin-bottom: 0.5em;
-  float: left;
-  width: 45%;
+  float: inherit;
+  width: auto;
   padding-right: 30px;
   position: relative;
   min-height: 40px;
@@ -22,7 +22,8 @@
   background-color: var(--color-primary);
   border-radius: 100%;
   top: 60%;
-  right: 42px;
+  right: auto;
+  left: 0px;
 }
 
 .entry__title h3 {
@@ -38,10 +39,14 @@
   font-weight: 300;
 }
 
+.entry__title * {
+  display: none;
+}
+
 .entry__body {
   margin: -25px 0 15px;
-  float: right;
-  width: 50%;
+  float: inherit;
+  width: auto;
   padding-left: 30px; /* gutter */
   font-weight: var(--block-font-weight--light);
   font-size: 1.14rem;
@@ -57,4 +62,25 @@
   font-size: 1rem;
   line-height: 20px;
   margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .entry__title {
+    float: left;
+    width: 45%;
+  }
+
+  .entry__body {
+    width: 50%;
+    float: right;
+  }
+
+  .entry__title * {
+    display: block;
+  }
+
+  .entry__title:before {
+    left: auto;
+    right: 42px;
+  }
 }

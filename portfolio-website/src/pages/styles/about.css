@@ -22,12 +22,14 @@
 .about-description {
   font-size: 1.14rem;
   margin-bottom: 15px;
+  line-height: 1.4rem;
 }
 
 .toolset-wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
 }
 
 .toolset-wrapper .list-wrapper:nth-child(-n + 2) {
@@ -38,4 +40,19 @@
 .about-section {
   margin-top: 80px;
   width: 100%;
+}
+
+.about-section .sub-section-header {
+  text-align: center;
+}
+
+@media screen and (min-width: 530px) {
+  .toolset-wrapper {
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .about-section .sub-section-header {
+    text-align: left;
+  }
 }
