@@ -1,18 +1,18 @@
 .hero__icon {
-  font-size: 40px;
-  line-height: 72px;
+  font-size: 2.86rem;
+  line-height: 5.14rem;
 }
 
 .hero__description {
-  font-size: 21px;
-  line-height: 31px;
-  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.21rem;
+  font-weight: var(--block-font-weight--light);
   max-width: 621px;
   margin-bottom: 30px;
 }
 
 .hero__description a {
-  color: var(--c-current--work);
+  color: var(--color-current-work);
   text-decoration: none;
   font-weight: 700;
 }
