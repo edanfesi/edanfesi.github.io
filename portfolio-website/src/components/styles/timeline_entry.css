@@ -20,19 +20,20 @@
   height: 12px;
   background-color: var(--color-primary);
   border-radius: 100%;
-  top: 65%;
+  top: 60%;
   right: 42px;
 }
 
 .entry__title h3 {
   margin: 0;
-  font-size: 21px;
-  line-height: 27px;
+  font-size: 1.5rem;
+  line-height: 1.93rem;
+  font-weight: var(--block-font-weight--bold);
 }
 
 .entry__title p {
   margin: 0;
-  font-size: 16px;
+  font-size: 1.14rem;
   font-weight: 300;
 }
 
@@ -42,6 +43,7 @@
   width: 50%;
   padding-left: 30px; /* gutter */
   font-weight: var(--block-font-weight--light);
+  font-size: 1.14rem;
 }
 
 .entry__body h4 {
@@ -50,7 +52,7 @@
 }
 
 .entry__body p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 20px;
   margin: 0;
 }
