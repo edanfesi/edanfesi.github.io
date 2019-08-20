@@ -4,7 +4,6 @@ import "./styles/get_in_touch.css"
 
 import SubSectionHeader from "./sub_section_header"
 import ProfileContact from "./profile_contact"
-import Footer from "./footer"
 
 function GetInTouch() {
   return (

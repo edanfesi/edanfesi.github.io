@@ -1,8 +1,9 @@
 .get-in-touch {
-  background-color: var(--c-primary);
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-secundary);
   max-width: inherit;
   flex-direction: column;
+  padding-bottom: 70px;
 }
 
 .get-in-touch-wrapper {
@@ -20,10 +21,4 @@
 .get-in-touch__profile-contact {
   width: 300px;
   margin: auto;
-}
-
-.copyright-section {
-  position: relative;
-  bottom: 40px;
-  font-size: 0.86rem;
 }
