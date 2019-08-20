@@ -13,19 +13,19 @@
 
 .process-step__number {
   grid-area: process-step;
-  background-color: var(--c-primary);
-  border-radius: var(--border-radius);
+  background-color: var(--color-primary);
+  border-radius: var(--block-border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--color-secundary);
   font-size: 1.71rem;
-  font-weight: 700;
+  font-weight: var(--block-font-weight--bold);
 }
 
 .process-step__title {
   grid-area: process-title;
-  font-weight: 700;
+  font-weight: var(--block-font-weight--bold);
   font-size: 1.71rem;
   line-height: 2.21rem;
   display: flex;
@@ -39,5 +39,6 @@
 }
 
 .process-step__description span {
-  font-weight: 700;
+  font-weight: var(--block-font-weight--bold);
+  margin-right: 3px;
 }
