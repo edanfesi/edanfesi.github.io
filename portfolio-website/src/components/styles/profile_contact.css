@@ -28,7 +28,7 @@
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background-color: var(--c-availability-true);
+  background-color: var(--color-availability-true);
   border: 1px solid white;
   box-shadow: 0 2px 4px rgba(40, 205, 65, 0.15);
   position: absolute;
