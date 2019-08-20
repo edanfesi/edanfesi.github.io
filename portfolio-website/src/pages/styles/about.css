@@ -1,0 +1,39 @@
+.about-wrapper {
+  max-width: 600px;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  padding-bottom: 80px;
+}
+
+.about-wrapper > .section-header {
+  text-align: center;
+}
+
+.about-wrapper > .section-header .section-header__title {
+  margin-bottom: 2.86rem;
+}
+
+.portrait img {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.about-description {
+  margin-bottom: 15px;
+}
+
+.toolset-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.toolset-wrapper .list-wrapper:nth-child(-n + 2) {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.about-section {
+  margin-top: 80px;
+  width: 100%;
+}
