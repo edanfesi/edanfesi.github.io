@@ -17,7 +17,7 @@
   --block-border-radius: 5px;
   --block-max-width--web: 1100px;
 
-  --block-font-size: 16px;
+  --block-font-size: 14px;
   --block-font-weight--light: 300;
   --block-font-weight: 400;
   --block-font-weight--bold: 700;
@@ -51,7 +51,7 @@ hr {
 .btn {
   color: var(--btn-color__text);
   background-color: var(--color-brand);
-  padding: 7px 15px;
+  padding: 8px 16px;
   border-radius: var(--block-border-radius);
   outline: none;
   border: none;
