@@ -3,14 +3,16 @@
   padding: 9px 0;
   position: fixed;
   width: 100%;
-  background-color: var(--background-color--light);
+  background-color: var(--page-color-background--light);
   z-index: 1;
+  color: inherit;
+  text-decoration: none;
 }
 
 .header-wrapper {
   display: flex;
   margin: auto;
-  max-width: var(--max-width-container--web);
+  max-width: var(--block-max-width--web);
 }
 
 .logo {
@@ -20,8 +22,13 @@
   align-items: center;
 }
 
+.logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .logo span {
-  color: var(--c-brand);
+  color: var(--color-brand);
 }
 
 .nav {
