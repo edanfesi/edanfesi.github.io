@@ -4,9 +4,9 @@ import "./styles/section_header.css"
 
 const SectionHeader = props => {
   return (
-    <div>
-      <h4 className="section_header__sub-title">{props.sub_title}</h4>
-      <h2 className="section_header__title">{props.title}</h2>
+    <div className="section-header" key={props.id}>
+      <h5 className="section-header__sub-title">{props.sub_title}</h5>
+      <h2 className="section-header__title">{props.title}</h2>
     </div>
   )
 }

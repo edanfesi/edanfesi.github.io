@@ -1,11 +1,11 @@
-.section_header__sub-title {
-  font-weight: 300;
+.section-header__sub-title {
+  font-weight: var(--block-font-weight--light);
   font-size: 1.28rem;
   margin-bottom: 0.7rem;
 }
 
-.section_header__title {
-  font-weight: 700;
+.section-header__title {
+  font-weight: var(--block-font-weight--bold);
   font-size: 4.28rem;
   margin-bottom: 5rem;
 }
