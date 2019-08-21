@@ -6,9 +6,9 @@ import ProfileContact from "./profile_contact"
 
 function Hero() {
   return (
-    <section className="section">
+    <section className="section animated">
       <div className="hero-wrapper">
-        <span className="hero__icon" role="img" aria-label="Waving Hand">
+        <span className="hero__icon wave" role="img" aria-label="Waving Hand">
           👋
         </span>
 

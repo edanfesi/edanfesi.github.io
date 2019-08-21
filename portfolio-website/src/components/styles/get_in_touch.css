@@ -3,13 +3,14 @@
   color: var(--color-secundary);
   max-width: inherit;
   flex-direction: column;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .get-in-touch-wrapper {
   max-width: 550px;
   margin: auto;
   text-align: center;
+  width: 100%;
 }
 
 .get-in-touch__description {
@@ -22,4 +23,10 @@
 .get-in-touch__profile-contact {
   width: 300px;
   margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .get-in-touch {
+    padding-bottom: 70px;
+  }
 }

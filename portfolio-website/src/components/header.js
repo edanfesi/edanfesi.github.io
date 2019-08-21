@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React, { Component } from "react"
 
 import "./styles/header.css"
+import MenuIcon from "../images/menu.svg"
 
 class Header extends Component {
   render() {
@@ -23,11 +24,13 @@ class Header extends Component {
           </nav>
 
           <a
+            id="contact-me-btn"
             className="btn"
             href="mailto:edanfesi@gmail.com?subject=Hello%20Edward"
           >
             Contact me
           </a>
+          <div id="menu-icon" className="play"></div>
         </div>
       </header>
     )

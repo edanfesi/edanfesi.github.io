@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="social-media-wrapper">
         <a
-          className="social-media-link"
+          className="social-media-link social-media-link--linkedin"
           target="_blank"
           href="https://www.linkedin.com/in/edanfesi/"
           rel="noopener noreferrer"
@@ -18,7 +18,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a
-          className="social-media-link"
+          className="social-media-link social-media-link--github"
           target="_blank"
           href="https://github.com/edanfesi"
           rel="noopener noreferrer"

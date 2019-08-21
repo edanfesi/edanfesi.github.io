@@ -7,7 +7,7 @@ import ProfileContact from "./profile_contact"
 
 function GetInTouch() {
   return (
-    <section className="get-in-touch section">
+    <section className="get-in-touch section animated ">
       <div className="get-in-touch-wrapper">
         <SubSectionHeader
           sub_title="Get in touch"

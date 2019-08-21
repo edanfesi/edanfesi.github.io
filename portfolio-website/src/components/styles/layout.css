@@ -3,7 +3,8 @@
 :root {
   /* Branding Information */
   --color-brand: #007aff;
-  --color-brand--dark: #0084ff;
+  --color-brand--light: rgba(0, 122, 255, 0.85);
+  --color-brand--dark: rgba(0, 122, 255, 0.9);
 
   --color-primary: #121217;
   --color-primary--light: rgba(0, 0, 0, 0.15);
@@ -12,6 +13,16 @@
 
   --color-current-work: #fbd54a;
   --color-availability-true: #28cd41;
+
+  --color-linkedin: #4875b4;
+  --color-github: #6e5494;
+
+  --gradient-brand: linear-gradient(
+    90deg,
+    var(--color-brand),
+    var(--color-brand) 50%,
+    var(--color-primary) 0
+  );
 
   /* General Information */
   --block-border-radius: 5px;
@@ -36,6 +47,10 @@ html {
   font-size: var(--block-font-size);
 }
 
+body * {
+  box-sizing: border-box;
+}
+
 h1 {
   font-weight: var(--block-font-weight--bold);
   font-size: 5rem;
@@ -56,19 +71,72 @@ hr {
   outline: none;
   border: none;
   text-decoration: none;
+  box-shadow: 0px 2px 4px 0 var(--btn-color__shadow);
+  min-width: 100px;
+}
+
+.btn:hover {
+  background-color: var(--color-brand--light);
+  -webkit-transform: translateY(-1px);
+  -moz-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  -o-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+
+.btn:focus {
+  background-color: var(--color-brand--dark);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .section {
   display: flex;
   align-items: center;
   /* height: 100vh; */
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding: 100px 15px;
   max-width: var(--block-max-width--web);
   margin: auto;
+  justify-content: center;
+}
+
+.animated {
+  -webkit-animation: appearing-block-anim;
+  -moz-animation-name: appearing-block-anim;
+  -o-animation-name: appearing-block-anim;
+  animation-name: appearing-block-anim;
+
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 .link {
   color: var(--color-brand);
   text-decoration: none;
+}
+
+@keyframes appearing-block-anim {
+  from {
+    -webkit-transform: translateX(-120%);
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    justify-content: flex-start;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 }

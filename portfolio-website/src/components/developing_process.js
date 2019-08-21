@@ -38,13 +38,13 @@ function DevelopingProcess() {
   ]
 
   return (
-    <section className="section">
+    <section className="section animated">
       <div className="content-wrapper">
         <SectionHeader sub_title="How I work" title="Developing Process" />
 
         <div className="process-steps-wrapper">
-          {process_steps.map(process_step => (
-            <ProcessStep process_step={process_step} />
+          {process_steps.map((process_step, index) => (
+            <ProcessStep process_step={process_step} key={index} />
           ))}
         </div>
       </div>

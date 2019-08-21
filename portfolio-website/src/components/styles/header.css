@@ -1,6 +1,6 @@
 .header {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  padding: 9px 0;
+  padding: 9px 16px;
   position: fixed;
   width: 100%;
   background-color: var(--page-color-background--light);
@@ -13,6 +13,7 @@
   display: flex;
   margin: auto;
   max-width: var(--block-max-width--web);
+  justify-content: space-between;
 }
 
 .logo {
@@ -32,18 +33,82 @@
 }
 
 .nav {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 2;
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
 }
 
 .nav ul li {
   display: inline-block;
-  margin: auto 39px;
+  background-image: var(--gradient-brand);
+  background-position: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav ul li,
+.nav ul li:hover {
+  background-size: 200% 100%;
+  transition: background-position 0.5s, background-size 0.5s;
+}
+
+.nav ul li:hover {
+  background-position: 0;
 }
 
 .nav a {
   color: inherit;
   text-decoration: none;
+}
+
+#contact-me-btn {
+  /* display: none; */
+  height: 30px;
+}
+
+#menu-icon {
+  background: url("../../images/menu.svg") no-repeat;
+  width: 24px;
+  height: 24px;
+  animation: 1000ms;
+  opacity: 0;
+  animation-timing-function: steps(30);
+  animation-fill-mode: forwards;
+  margin: 9px 0px;
+  display: none;
+}
+
+#menu-icon.play {
+  animation-name: show-menu;
+}
+
+@keyframes show-menu {
+  0% {
+    background-position: 0px 0px;
+    opacity: 0;
+  }
+  100% {
+    background-position: -720px 0px;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-wrapper {
+    justify-content: flex-start;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  #contact-me-btn {
+    display: block;
+  }
 }

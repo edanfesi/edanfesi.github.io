@@ -13,11 +13,17 @@
 }
 
 .list--items {
-  list-style: initial;
+  list-style: none;
 }
 
 .list--items li {
   font-size: 1.26rem;
   line-height: 1.64rem;
   font-weight: var(--block-font-weight--light);
+}
+
+@media screen and (min-width: 680px) {
+  .list--items {
+    list-style: initial;
+  }
 }

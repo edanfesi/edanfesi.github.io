@@ -1,3 +1,7 @@
+.section-header {
+  text-align: center;
+}
+
 .section-header__sub-title {
   font-weight: var(--block-font-weight--light);
   font-size: 1.28rem;
@@ -6,6 +10,17 @@
 
 .section-header__title {
   font-weight: var(--block-font-weight--bold);
-  font-size: 4.28rem;
-  margin-bottom: 5rem;
+  font-size: 4rem;
+  margin-bottom: 4.4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .section-header {
+    text-align: left;
+  }
+
+  .section-header__title {
+    font-size: 4.28rem;
+    margin-bottom: 5rem;
+  }
 }
