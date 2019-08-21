@@ -88,7 +88,7 @@ const AboutPage = () => (
           className="link"
           href="mailto:edanfesi@gmail.com?subject=I%20want%20to%20build%20an%20amazing%20project"
         >
-          send me a message
+          send me a message{"\u00A0"}
         </a>
         and let’s discuss how can I help you.
       </p>

@@ -1,5 +1,5 @@
 .about-wrapper {
-  max-width: 600px;
+  max-width: 600px !important;
   flex-flow: column wrap;
   align-items: flex-start;
   padding-bottom: 80px;
