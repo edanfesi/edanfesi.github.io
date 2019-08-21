@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React, { Component } from "react"
 
 import "./styles/header.css"
-import MenuIcon from "../images/menu.svg"
+// import MenuIcon from "../images/menu.svg"
 
 class Header extends Component {
   render() {
