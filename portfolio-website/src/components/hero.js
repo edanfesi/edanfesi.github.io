@@ -17,8 +17,8 @@ function Hero() {
         </h1>
 
         <p className="hero__description">
-          Currently developing, integrating and testing end-to-end solution
-          implementation services at{" "}
+          I'm a Software Developer that currently developing, integrating and
+          testing end-to-end solutions implementation services at{" "}
           <a href="https://www.ey.com/ac/en/home">EY Panama</a> to help
           companies thrive in the transformative age.
         </p>
