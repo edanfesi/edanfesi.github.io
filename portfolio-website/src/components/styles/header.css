@@ -76,16 +76,57 @@
   background: url("../../images/menu.svg") no-repeat;
   width: 24px;
   height: 24px;
-  animation: 1000ms;
   opacity: 0;
-  animation-timing-function: steps(30);
-  animation-fill-mode: forwards;
   margin: 9px 0px;
   display: none;
+  -moz-animation: 1000ms;
+  -o-animation: 1000ms;
+  -webkit-animation: 1000ms;
+  animation: 1000ms;
+  animation-timing-function: steps(30);
+  -o-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 #menu-icon.play {
+  -webkit-animation-name: show-menu;
+  -moz-animation-name: show-menu;
+  -o-animation-name: show-menu;
   animation-name: show-menu;
+}
+
+@-webkit-keyframes show-menu {
+  0% {
+    background-position: 0px 0px;
+    opacity: 0;
+  }
+  100% {
+    background-position: -720px 0px;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes show-menu {
+  0% {
+    background-position: 0px 0px;
+    opacity: 0;
+  }
+  100% {
+    background-position: -720px 0px;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes show-menu {
+  0% {
+    background-position: 0px 0px;
+    opacity: 0;
+  }
+  100% {
+    background-position: -720px 0px;
+    opacity: 1;
+  }
 }
 
 @keyframes show-menu {
