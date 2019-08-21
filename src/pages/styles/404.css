@@ -1,0 +1,48 @@
+.lost-page-wrapper {
+  min-height: 600px;
+  padding-top: 150px;
+}
+
+.lost-page-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.lost-page-main-emoji {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.lost-page-message {
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 1.5rem;
+  max-width: 500px;
+  font-weight: var(--block-font-weight--light);
+  width: 100%;
+  font-size: 1.29rem;
+}
+
+.go-home-link-container {
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 500px) {
+  .lost-page-title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .lost-page-wrapper {
+    padding-top: 100px;
+  }
+
+  .lost-page-title {
+    font-size: 5rem;
+    margin-bottom: 50px;
+  }
+}

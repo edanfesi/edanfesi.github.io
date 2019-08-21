@@ -49,6 +49,7 @@
   background-image: var(--gradient-brand);
   background-position: 100%;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
