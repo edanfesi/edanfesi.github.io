@@ -102,7 +102,7 @@ const AboutPage = () => (
         >
           LinkedIn
         </a>{" "}
-        (and see mi full CV),
+        (and see mi full CV),{"\u00A0"}
         <a
           className="link"
           href="https://github.com/edanfesi"
