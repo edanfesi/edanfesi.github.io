@@ -62,6 +62,7 @@ hr {
   border: none;
   text-decoration: none;
   box-shadow: 0px 2px 4px 0 var(--btn-color__shadow);
+  min-width: 100px;
 }
 
 .btn:hover {

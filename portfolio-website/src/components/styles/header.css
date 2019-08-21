@@ -37,12 +37,13 @@
   justify-content: center;
   align-items: center;
   flex-grow: 2;
-  display: none;
+  /* display: none; */
 }
 
 .nav ul {
   display: flex;
   height: 100%;
+  justify-content: center;
 }
 
 .nav ul li {
@@ -75,7 +76,7 @@
 }
 
 #contact-me-btn {
-  display: none;
+  /* display: none; */
   height: 30px;
   margin: 9px 0px;
 }
@@ -89,6 +90,7 @@
   animation-timing-function: steps(30);
   animation-fill-mode: forwards;
   margin: 9px 0px;
+  display: none;
 }
 
 #menu-icon.play {
@@ -109,10 +111,6 @@
 @media screen and (min-width: 768px) {
   .header-wrapper {
     justify-content: flex-start;
-  }
-
-  .nav {
-    display: flex;
   }
 
   #menu-icon {
