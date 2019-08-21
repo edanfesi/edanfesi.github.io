@@ -1,0 +1,52 @@
+.footer {
+  padding: 20px 15px;
+  background-color: var(--color-primary);
+  color: var(--color-secundary);
+}
+
+.footer p {
+  font-size: 0.86rem;
+  opacity: 0.3;
+  line-height: 1.3rem;
+  text-align: center;
+}
+
+.social-media-wrapper {
+  margin-bottom: 1.07rem;
+  text-align: center;
+}
+
+.social-media-link {
+  opacity: 0.3;
+  font-size: 1.43rem;
+  color: var(--btn-color__text);
+  margin: auto 0.71rem;
+  transition: opacity 0.5s;
+}
+
+.social-media-link:hover {
+  opacity: 1;
+}
+
+.social-media-link svg {
+  transition: color 0.5s;
+}
+
+.social-media-link--linkedin:hover svg {
+  color: var(--color-linkedin);
+}
+
+.social-media-link--github:hover svg {
+  color: var(--color-github);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer p {
+    line-height: initial;
+  }
+}

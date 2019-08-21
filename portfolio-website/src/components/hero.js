@@ -6,9 +6,9 @@ import ProfileContact from "./profile_contact"
 
 function Hero() {
   return (
-    <div className="hero">
+    <section className="section animated">
       <div className="hero-wrapper">
-        <span className="hero__icon" role="img" arial-label="Waving Hand">
+        <span className="hero__icon wave" role="img" aria-label="Waving Hand">
           👋
         </span>
 
@@ -17,17 +17,17 @@ function Hero() {
         </h1>
 
         <p className="hero__description">
-          Currently developing, integrating and testing end-to-end solution
-          implementation services at <a href="#">EY Panama</a> to help companies
-          thrive in the transformative age.
+          I'm a Software Developer that currently developing, integrating and
+          testing end-to-end solutions implementation services at{" "}
+          <a href="https://www.ey.com/ac/en/home">EY Panama</a> to help
+          companies thrive in the transformative age.
         </p>
 
         <button className="btn hero__btn">Get Started</button>
 
         <ProfileContact />
       </div>
-      <hr />
-    </div>
+    </section>
   )
 }
 

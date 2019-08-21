@@ -1,6 +1,7 @@
 .profile-availability {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .profile-img {
@@ -28,7 +29,7 @@
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background-color: var(--c-availability-true);
+  background-color: var(--color-availability-true);
   border: 1px solid white;
   box-shadow: 0 2px 4px rgba(40, 205, 65, 0.15);
   position: absolute;
@@ -43,4 +44,10 @@
 
 .profile-availability__description span {
   font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-availability {
+    justify-content: flex-start;
+  }
 }
