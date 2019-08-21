@@ -1,6 +1,6 @@
 .header {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  padding: 9px 16px;
+  padding: 0px 16px;
   position: fixed;
   width: 100%;
   background-color: var(--page-color-background--light);
@@ -21,6 +21,7 @@
   font-weight: 700;
   display: flex;
   align-items: center;
+  padding: 9px 0px;
 }
 
 .logo a {
@@ -39,9 +40,33 @@
   display: none;
 }
 
+.nav ul {
+  display: flex;
+  height: 100%;
+}
+
 .nav ul li {
   display: inline-block;
-  margin: auto 39px;
+  margin: 0px 24px;
+  padding: 15px 15px;
+  animation: border-bottom;
+  position: relative;
+}
+
+.nav ul li:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-brand);
+  transition: width 0.3s;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.nav ul li:hover:after {
+  width: 100%;
 }
 
 .nav a {
@@ -51,6 +76,8 @@
 
 #contact-me-btn {
   display: none;
+  height: 30px;
+  margin: 9px 0px;
 }
 
 #menu-icon {
@@ -61,6 +88,7 @@
   opacity: 0;
   animation-timing-function: steps(30);
   animation-fill-mode: forwards;
+  margin: 9px 0px;
 }
 
 #menu-icon.play {
