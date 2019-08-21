@@ -8,7 +8,7 @@ function Hero() {
   return (
     <section className="section">
       <div className="hero-wrapper">
-        <span className="hero__icon" role="img" aria-label="Waving Hand">
+        <span className="hero__icon wave" role="img" aria-label="Waving Hand">
           👋
         </span>
 

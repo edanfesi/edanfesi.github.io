@@ -3,6 +3,14 @@
   line-height: 5.14rem;
 }
 
+.hero__icon.wave {
+  animation-name: waving-hand-anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
 .hero__description {
   font-size: 1.5rem;
   line-height: 2.21rem;
@@ -19,6 +27,30 @@
 
 .hero__btn {
   margin-bottom: 40px;
+}
+
+@keyframes waving-hand-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @media screen and (max-width: 767px) {
