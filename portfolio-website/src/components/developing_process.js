@@ -38,7 +38,7 @@ function DevelopingProcess() {
   ]
 
   return (
-    <section className="section">
+    <section className="section animated">
       <div className="content-wrapper">
         <SectionHeader sub_title="How I work" title="Developing Process" />
 

@@ -6,6 +6,13 @@
   padding-top: 125px;
 }
 
+.about-wrapper.animated {
+  -webkit-animation-name: appearing-block-bottom-anim;
+  -moz-animation-name: appearing-block-bottom-anim;
+  -o-animation-name: appearing-block-bottom-anim;
+  animation-name: appearing-block-bottom-anim;
+}
+
 .about-wrapper > .section-header {
   text-align: center;
 }
@@ -44,6 +51,19 @@
 
 .about-section .sub-section-header {
   text-align: center;
+}
+
+@keyframes appearing-block-bottom-anim {
+  from {
+    -webkit-transform: translateY(120%);
+    transform: translateY(120%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 530px) {

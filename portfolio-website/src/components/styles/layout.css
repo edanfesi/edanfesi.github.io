@@ -14,6 +14,16 @@
   --color-current-work: #fbd54a;
   --color-availability-true: #28cd41;
 
+  --color-linkedin: #4875b4;
+  --color-github: #6e5494;
+
+  --gradient-brand: linear-gradient(
+    90deg,
+    var(--color-brand),
+    var(--color-brand) 50%,
+    var(--color-primary) 0
+  );
+
   /* General Information */
   --block-border-radius: 5px;
   --block-max-width--web: 1100px;
@@ -93,9 +103,34 @@ hr {
   justify-content: center;
 }
 
+.animated {
+  -webkit-animation: appearing-block-anim;
+  -moz-animation-name: appearing-block-anim;
+  -o-animation-name: appearing-block-anim;
+  animation-name: appearing-block-anim;
+
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
 .link {
   color: var(--color-brand);
   text-decoration: none;
+}
+
+@keyframes appearing-block-anim {
+  from {
+    -webkit-transform: translateX(-120%);
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 1200px) {

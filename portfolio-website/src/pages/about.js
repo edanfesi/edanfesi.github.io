@@ -63,7 +63,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
 
-    <section className="about-wrapper section">
+    <section className="about-wrapper section animated">
       <SectionHeader
         title="Hi there, I’m Edward Fernández"
         sub_title="Nice to meet you"
@@ -120,7 +120,7 @@ const AboutPage = () => (
         </a>
       </p>
 
-      <div className="about-section">
+      <div className="about-section animated">
         <SubSectionHeader sub_title="Ready to work" title="Toolset" />
         <ul className="toolset-wrapper">
           {toolset.map((item, index) => (
@@ -129,7 +129,7 @@ const AboutPage = () => (
         </ul>
       </div>
 
-      <div className="about-section">
+      <div className="about-section animated">
         <SubSectionHeader
           sub_title="What I've been doing"
           title="Work Experience"

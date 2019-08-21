@@ -21,6 +21,23 @@
   font-size: 1.43rem;
   color: var(--btn-color__text);
   margin: auto 0.71rem;
+  transition: opacity 0.5s;
+}
+
+.social-media-link:hover {
+  opacity: 1;
+}
+
+.social-media-link svg {
+  transition: color 0.5s;
+}
+
+.social-media-link--linkedin:hover svg {
+  color: var(--color-linkedin);
+}
+
+.social-media-link--github:hover svg {
+  color: var(--color-github);
 }
 
 @media screen and (min-width: 1200px) {
