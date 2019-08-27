@@ -33,7 +33,7 @@ const toolset = [
   },
   {
     title: "Version Control",
-    list: ["Git & Github"],
+    list: ["Git"],
   },
 ]
 const entries = [
